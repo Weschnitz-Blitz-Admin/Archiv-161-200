@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weschnitz-Blitz</title>
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E0F7FA;
+        }
+        /* Stil für das Logo */
+        #logo {
+            width: 100%; /* Volle Breite für das Logo */
+            display: block;
+        }
+        /* Stil für die Navigation */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 2px 10px;
+            text-decoration: none;
+            background-color: rgba(107, 132, 196, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease; /* Hintergrundfarbe Übergang */
+            display: inline-block;
+            white-space: nowrap; /* Verhindert Zeilenumbruch */
+        }
+        nav a:hover {
+            background-color: rgba(107, 132, 196, 1); /* Dunklere Hintergrundfarbe beim Überfahren */
+        }
+        /* Stil für den Hauptinhalt */
+        .content {
+            padding: 20px;
+            text-align: left; /* Text links ausrichten */
+            max-width: 70%; /* Maximale Breite des Inhalts */
+            margin: 0 auto; /* Zentrierung des Inhalts */
+        }
+	.content2 {
+            padding: 20px;
+            text-align: left; /* Text links ausrichten */
+            max-width: 85%; /* Maximale Breite des Inhalts */
+            margin: 0 auto; /* Zentrierung des Inhalts */
+        }
+       .download-button {
+    display: flex; /* Flexbox-Layout verwenden */
+    flex-wrap: wrap; /* Umbruch der Links bei Bedarf */
+    justify-content: center; /* Zentriert die Links horizontal */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.download-button a {
+    display: block; /* Damit die Anker als Block-Elemente behandelt werden */
+    margin: 0 10px 20px; /* Ändere den Abstand zwischen den Links */
+    text-align: center; /* Zentriert den Text in den Anker-Elementen */
+}
+        .download-button img {
+    	   width: 350px; /* Breite des Bildes */
+           height: auto; /* Höhe des Bildes */
+           border-radius: 5px; /* Etwas weniger runde Ecken */
+           transition: transform 0.3s ease; /* Animierter Hover-Effekt */
+       	}
+        .download-button img:hover {
+            transform: scale(1.1); /* Vergrößern des Bildes beim Überfahren */
+        }
+        /* Stil für die Fußzeile */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+	/* Stil für das Desktop-Logo */
+        #logo {
+            width: 100%; /* Volle Breite für das Logo */
+            display: block;
+        }
+
+        /* Stil für das mobile Logo */
+        #logo-mobile {
+            width: 100%; /* Volle Breite für das mobile Logo */
+            display: none; /* Standardmäßig ausblenden */
+        }
+
+.ut {
+            flex-grow: 1; /* Der Text soll so viel Platz wie möglich einnehmen */
+            max-width: calc(100%); /* Maximale Breite des Textbereichs */
+        }
+
+.ut p {
+            font-size: 18px; /* Größere Schriftgröße für den Text */
+            line-height: 1.6; /* Zeilenhöhe für verbesserte Lesbarkeit */
+            text-align: justify; /* Blocksatz für den Text */
+        }
+
+
+        /* Media Queries für mobile Geräte */
+        @media screen and (max-width: 768px) {
+            .content {
+                max-width: 90%; /* Breite des Inhalts für kleinere Bildschirme reduzieren */
+            }
+            nav {
+                display: block;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .team-member {
+                display: block; /* Bild und Text untereinander anzeigen */
+            }
+            .team-member img {
+                width: 100%; /* Bildbreite auf 100% setzen */
+                margin-right: 0; /* Abstand zwischen Bild und Text entfernen */
+                margin-bottom: 15px; /* Abstand unter dem Bild hinzufügen */
+            }
+            .ut {
+             text-align: left; /* Maximale Breite des Textbereichs */
+       	    }
+
+	    .ut p {
+             text-align: left;
+      	    }
+
+            #logo {
+                width: 80%; /* Breite des Logos auf 80% setzen */
+                margin: 0 auto; /* Zentrierung des Logos */
+            }
+            .team-member-text {
+                max-width: calc(100% - 20px); /* Textbreite entsprechend der Bildbreite */
+            }
+	#logo {
+                display: none;
+            }
+
+            /* Zentriere das mobile Logo */
+            #logo-mobile {
+                display: block;
+                margin: 0 auto; /* Zentriert das Bild horizontal */
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Kopfzeile mit Logo -->
+     <header>
+    <a href="index.html">
+        <img id="logo" src="Header.png" alt="Desktop Logo">
+    </a>
+    <img id="logo-mobile" src="Header2.png" alt="Mobiles Logo">
+    
+</header>
+    
+    <!-- Navigation -->
+    <nav>
+        <a href="Konzept.html">Unser Konzept</a>
+        <a href="Magazin.html">Aktuelles Magazin</a>
+	<a href="Archiv.html">Archiv</a>
+        <a href="Kontakt.html">Kontakt</a>
+        <a href="Anzeigenangebot.html">Anzeigenangebot</a>
+        <a href="Auslagestellen.html">Auslagestellen</a>
+        <a href="Team.html">Unser Team</a>
+    </nav>
+    
+
+    
+
+    <!-- Hauptinhalt -->
+    <div class="content">
+        <h1>Archiv</h1>
+ <div class="ut">
+        <p>Der Weschnitz-Blitz erscheint alle sechs Wochen mit interessanten Themen rund um und über das Weschnitztal. Hier gibt es unsere vergangenen Ausgaben frei zugänglich. Die fehlenden Ausgaben 142 bis 176 werden nach und nach hinzugefügt.</p>
+</div>
+</div>
+<div class="content2">
+        
+ <div class="ut">
+
+        <div class="download-button">
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/Weschnitz Blitz 184 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/Cover Weschnitz Blitz 184.jpg" alt="Weschnitz-Blitz Nr. 184">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB183 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB183.jpg" alt="Weschnitz-Blitz Nr. 183">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB182 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB182.jpg" alt="Weschnitz-Blitz Nr. 182">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB181 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB181.jpg" alt="Weschnitz-Blitz Nr. 181">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB180 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB180.jpg" alt="Weschnitz-Blitz Nr. 180">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB179 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB179.jpg" alt="Weschnitz-Blitz Nr. 179">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB178 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB178.jpg" alt="Weschnitz-Blitz Nr. 178">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-161-200/WB177 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-161-200/CoverWB177.jpg" alt="Weschnitz-Blitz Nr. 177">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 141 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 141.jpg" alt="Weschnitz-Blitz Nr. 141">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 140 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 140.jpg" alt="Weschnitz-Blitz Nr. 140">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 139 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 139.jpg" alt="Weschnitz-Blitz Nr. 139">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 138 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 138.jpg" alt="Weschnitz-Blitz Nr. 138">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 137 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 137.jpg" alt="Weschnitz-Blitz Nr. 137">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 136 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 136.jpg" alt="Weschnitz-Blitz Nr. 136">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 135 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 135.jpg" alt="Weschnitz-Blitz Nr. 135">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 134 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 134.jpg" alt="Weschnitz-Blitz Nr. 134">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 133 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 133.jpg" alt="Weschnitz-Blitz Nr. 133">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 132 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 132.jpg" alt="Weschnitz-Blitz Nr. 132">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 131 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 131.jpg" alt="Weschnitz-Blitz Nr. 131">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 130 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 130.jpg" alt="Weschnitz-Blitz Nr. 130">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 129 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 129.jpg" alt="Weschnitz-Blitz Nr. 129">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 128 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 128.jpg" alt="Weschnitz-Blitz Nr. 128">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 127 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 127.jpg" alt="Weschnitz-Blitz Nr. 127">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 126 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 126.jpg" alt="Weschnitz-Blitz Nr. 126">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 125 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 125.jpg" alt="Weschnitz-Blitz Nr. 125">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 124 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 124.jpg" alt="Weschnitz-Blitz Nr. 124">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 123 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 123.jpg" alt="Weschnitz-Blitz Nr. 123">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 122 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 122.jpg" alt="Weschnitz-Blitz Nr. 122">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-121-160/Weschnitz Blitz 121 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-121-160/Cover Weschnitz Blitz 121.jpg" alt="Weschnitz-Blitz Nr. 121">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 120 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 120.jpg" alt="Weschnitz-Blitz Nr. 120">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 119 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 119.jpg" alt="Weschnitz-Blitz Nr. 119">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 118 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 118.jpg" alt="Weschnitz-Blitz Nr. 118">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 117 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 117.jpg" alt="Weschnitz-Blitz Nr. 117">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 116 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 116.jpg" alt="Weschnitz-Blitz Nr. 116">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 115 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 115.jpg" alt="Weschnitz-Blitz Nr. 115">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 114 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 114.jpg" alt="Weschnitz-Blitz Nr. 114">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 113 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 113.jpg" alt="Weschnitz-Blitz Nr. 113">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 112 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 112.jpg" alt="Weschnitz-Blitz Nr. 112">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 111 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 111.jpg" alt="Weschnitz-Blitz Nr. 111">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 110 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 110.jpg" alt="Weschnitz-Blitz Nr. 110">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/Weschnitz Blitz 109 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/Cover Weschnitz Blitz 109.jpg" alt="Weschnitz-Blitz Nr. 109">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB108 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB108.jpg" alt="Weschnitz-Blitz Nr. 108">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB107 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB107.jpg" alt="Weschnitz-Blitz Nr. 107">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB106 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB106.jpg" alt="Weschnitz-Blitz Nr. 106">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB105 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB105.jpg" alt="Weschnitz-Blitz Nr. 105">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB104 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB104.jpg" alt="Weschnitz-Blitz Nr. 104">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB103 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB103.jpg" alt="Weschnitz-Blitz Nr. 103">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB102 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB102.jpg" alt="Weschnitz-Blitz Nr. 102">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB101 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB101.jpg" alt="Weschnitz-Blitz Nr. 101">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB100 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB100.jpg" alt="Weschnitz-Blitz Nr. 100">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB99 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB99.jpg" alt="Weschnitz-Blitz Nr. 99">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB98 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB98.jpg" alt="Weschnitz-Blitz Nr. 98">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB97 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB97.jpg" alt="Weschnitz-Blitz Nr. 97">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB96 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB96.jpg" alt="Weschnitz-Blitz Nr. 96">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB95 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB95.jpg" alt="Weschnitz-Blitz Nr. 95">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB94 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB94.jpg" alt="Weschnitz-Blitz Nr. 94">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB93 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB93.jpg" alt="Weschnitz-Blitz Nr. 93">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB92 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB92.jpg" alt="Weschnitz-Blitz Nr. 92">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB91 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB91.jpg" alt="Weschnitz-Blitz Nr. 91">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB90 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB90.jpg" alt="Weschnitz-Blitz Nr. 90">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB89 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB89.jpg" alt="Weschnitz-Blitz Nr. 89">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB88 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB88.jpg" alt="Weschnitz-Blitz Nr. 88">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB87 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB87.jpg" alt="Weschnitz-Blitz Nr. 87">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB86 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB86.jpg" alt="Weschnitz-Blitz Nr. 86">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB85 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB85.jpg" alt="Weschnitz-Blitz Nr. 85">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB84 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB84.jpg" alt="Weschnitz-Blitz Nr. 84">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB83 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB83.jpg" alt="Weschnitz-Blitz Nr. 83">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB82 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB82.jpg" alt="Weschnitz-Blitz Nr. 82">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-81-120/WB81 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-81-120/CoverWB81.jpg" alt="Weschnitz-Blitz Nr. 81">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB80 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB80.jpg" alt="Weschnitz-Blitz Nr. 80">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB79 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB79.jpg" alt="Weschnitz-Blitz Nr. 79">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB78 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB78.jpg" alt="Weschnitz-Blitz Nr. 78">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB77 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB77.jpg" alt="Weschnitz-Blitz Nr. 77">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB76 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB76.jpg" alt="Weschnitz-Blitz Nr. 76">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB75 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB75.jpg" alt="Weschnitz-Blitz Nr. 75">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB74 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB74.jpg" alt="Weschnitz-Blitz Nr. 74">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB73 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB73.jpg" alt="Weschnitz-Blitz Nr. 73">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB72 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB72.jpg" alt="Weschnitz-Blitz Nr. 72">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB71 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB71.jpg" alt="Weschnitz-Blitz Nr. 71">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB70 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB70.jpg" alt="Weschnitz-Blitz Nr. 70">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB69 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB69.jpg" alt="Weschnitz-Blitz Nr. 69">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB68 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB68.jpg" alt="Weschnitz-Blitz Nr. 68">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB67 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB67.jpg" alt="Weschnitz-Blitz Nr. 67">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB66 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB66.jpg" alt="Weschnitz-Blitz Nr. 66">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB65 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB65.jpg" alt="Weschnitz-Blitz Nr. 65">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB64 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB64.jpg" alt="Weschnitz-Blitz Nr. 64">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB63 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB63.jpg" alt="Weschnitz-Blitz Nr. 63">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB62 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB62.jpg" alt="Weschnitz-Blitz Nr. 62">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB61 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB61.jpg" alt="Weschnitz-Blitz Nr. 61">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB60 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB60.jpg" alt="Weschnitz-Blitz Nr. 60">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB59 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB59.jpg" alt="Weschnitz-Blitz Nr. 59">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB58 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB58.jpg" alt="Weschnitz-Blitz Nr. 58">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB57 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB57.jpg" alt="Weschnitz-Blitz Nr. 57">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB56 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB56.jpg" alt="Weschnitz-Blitz Nr. 56">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB55 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB55.jpg" alt="Weschnitz-Blitz Nr. 55">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB54 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB54.jpg" alt="Weschnitz-Blitz Nr. 54">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB53 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB53.jpg" alt="Weschnitz-Blitz Nr. 53">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB52 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB52.jpg" alt="Weschnitz-Blitz Nr. 52">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB51 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB51.jpg" alt="Weschnitz-Blitz Nr. 51">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB50 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB50.jpg" alt="Weschnitz-Blitz Nr. 50">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB49 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB49.jpg" alt="Weschnitz-Blitz Nr. 49">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB48 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB48.jpg" alt="Weschnitz-Blitz Nr. 48">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB47 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB47.jpg" alt="Weschnitz-Blitz Nr. 47">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB46 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB46.jpg" alt="Weschnitz-Blitz Nr. 46">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB45 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB45.jpg" alt="Weschnitz-Blitz Nr. 45">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB44 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB44.jpg" alt="Weschnitz-Blitz Nr. 44">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB43 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB43.jpg" alt="Weschnitz-Blitz Nr. 43">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB42 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB42.jpg" alt="Weschnitz-Blitz Nr. 42">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-41-80/WB41 digitale Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-41-80/CoverWB41.jpg" alt="Weschnitz-Blitz Nr. 41">
+</a>
+
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB40%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB40.jpg" alt="Weschnitz-Blitz Nr. 40">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB39%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB39.jpg" alt="Weschnitz-Blitz Nr. 39">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB38%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB38.jpg" alt="Weschnitz-Blitz Nr. 38">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB37%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB37.jpg" alt="Weschnitz-Blitz Nr. 37">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB36%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB36.jpg" alt="Weschnitz-Blitz Nr. 36">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB35%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB35.jpg" alt="Weschnitz-Blitz Nr. 35">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB34%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB34.jpg" alt="Weschnitz-Blitz Nr. 34">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB33%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB33.jpg" alt="Weschnitz-Blitz Nr. 33">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB32%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB32.jpg" alt="Weschnitz-Blitz Nr. 32">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB31%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB31.jpg" alt="Weschnitz-Blitz Nr. 31">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB30%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB30.jpg" alt="Weschnitz-Blitz Nr. 30">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB29%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB29.jpg" alt="Weschnitz-Blitz Nr. 29">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB28%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB28.jpg" alt="Weschnitz-Blitz Nr. 28">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB27%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB27.jpg" alt="Weschnitz-Blitz Nr. 27">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB26%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB26.jpg" alt="Weschnitz-Blitz Nr. 26">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB25%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB25.jpg" alt="Weschnitz-Blitz Nr. 25">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB24%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB24.jpg" alt="Weschnitz-Blitz Nr. 24">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB23%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB23.jpg" alt="Weschnitz-Blitz Nr. 23">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB22%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB22.jpg" alt="Weschnitz-Blitz Nr. 22">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB21%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB21.jpg" alt="Weschnitz-Blitz Nr. 21">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB20%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB20.jpg" alt="Weschnitz-Blitz Nr. 20">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB19%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB19.jpg" alt="Weschnitz-Blitz Nr. 19">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB18%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB18.jpg" alt="Weschnitz-Blitz Nr. 18">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB17%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB17.jpg" alt="Weschnitz-Blitz Nr. 17">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB16%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB16.jpg" alt="Weschnitz-Blitz Nr. 16">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB15%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB15.jpg" alt="Weschnitz-Blitz Nr. 15">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB14%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB14.jpg" alt="Weschnitz-Blitz Nr. 14">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB13%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB13.jpg" alt="Weschnitz-Blitz Nr. 13">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB12%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB12.jpg" alt="Weschnitz-Blitz Nr. 12">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB11%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB11.jpg" alt="Weschnitz-Blitz Nr. 11">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB10%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB10.jpg" alt="Weschnitz-Blitz Nr. 10">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB9%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB9.jpg" alt="Weschnitz-Blitz Nr. 9">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB8%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB8.jpg" alt="Weschnitz-Blitz Nr. 8">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB7%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB7.jpg" alt="Weschnitz-Blitz Nr. 7">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB6%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB6.jpg" alt="Weschnitz-Blitz Nr. 6">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB5%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB5.jpg" alt="Weschnitz-Blitz Nr. 5">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB4%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB4.jpg" alt="Weschnitz-Blitz Nr. 4">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB3%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB3.jpg" alt="Weschnitz-Blitz Nr. 3">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB2%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB2.jpg" alt="Weschnitz-Blitz Nr. 2">
+</a>
+
+<a href="https://weschnitz-blitz.de/Archiv-1-40/WB1%20digitale%20Ausgabe.pdf">
+    <img src="https://weschnitz-blitz.de/Archiv-1-40/CoverWB1.jpg" alt="Weschnitz-Blitz Nr. 1">
+</a>
+
+
+        </div>
+    </div>
+</div>
+
+    
+    <!-- Fußzeile -->
+       <!-- Fußzeile -->
+<footer style="text-align: center; margin-top: 20px;">
+    <!-- Button-Stil wie in der Navigation -->
+    <a href="Impressum.html" style="display: inline-block; margin: 0 10px; background-color: rgba(107, 132, 196, 0.8); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Impressum</a>
+    <br>
+    <br>
+    <!-- Zusätzlicher Platz -->
+    <div style="height: 10px;"></div>
+</footer
+</body>
+</html>
